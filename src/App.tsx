@@ -6,21 +6,29 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav className="nav">
-          <ul>
+        <nav>
+          <ol>
             <li>
-              <Link to="/">HOME</Link>
+              <Link className="link" to="/">
+                00 home
+              </Link>
             </li>
             <li>
-              <Link to="/destination">DESTINATION</Link>
+              <Link className="link" to="/destination">
+                01 destination
+              </Link>
             </li>
             <li>
-              <Link to="/crew">CREW</Link>
+              <Link className="link" to="/crew">
+                02 crew
+              </Link>
             </li>
             <li>
-              <Link to="/technology">TECHNOLOGY</Link>
+              <Link className="link" to="/technology">
+                03 technology
+              </Link>
             </li>
-          </ul>
+          </ol>
         </nav>
         <Switch>
           <Route exact path="/">

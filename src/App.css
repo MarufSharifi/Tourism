@@ -3,6 +3,30 @@
   height: 100vh;
 }
 
-.nav {
+nav {
+  width: 100vw;
   position: absolute;
+  display: flex;
+  flex-direction: row;
+}
+
+ol {
+  width: 50vw;
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+li {
+}
+
+.link {
+  word-spacing: 1vw;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
 }
