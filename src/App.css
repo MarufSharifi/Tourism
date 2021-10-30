@@ -3,17 +3,31 @@
   height: 100vh;
 }
 
-nav {
+.header {
   width: 100vw;
   position: absolute;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerLine {
+  width: 40vw;
+  height: 0.1px;
+  background-color: white;
 }
 
 ol {
   width: 50vw;
-  background-color: rgba(255, 255, 255, 0.05);
-  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,6 +36,8 @@ ol {
 }
 
 li {
+  padding: 20px 0 2px 0;
+  /* border-bottom: tomato solid 10px; */
 }
 
 .link {

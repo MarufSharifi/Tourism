@@ -6,30 +6,34 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <nav>
-          <ol>
-            <li>
-              <Link className="link" to="/">
-                00 home
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="/destination">
-                01 destination
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="/crew">
-                02 crew
-              </Link>
-            </li>
-            <li>
-              <Link className="link" to="/technology">
-                03 technology
-              </Link>
-            </li>
-          </ol>
-        </nav>
+        <div className="header">
+          <img src={require("../src/assets/logo.svg")} alt="logo" />
+          <nav>
+            <div className="headerLine" />
+            <ol>
+              <li>
+                <Link className="link" to="/">
+                  00 home
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/destination">
+                  01 destination
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/crew">
+                  02 crew
+                </Link>
+              </li>
+              <li>
+                <Link className="link" to="/technology">
+                  03 technology
+                </Link>
+              </li>
+            </ol>
+          </nav>
+        </div>
         <Switch>
           <Route exact path="/">
             <Home />
