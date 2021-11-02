@@ -1,5 +1,6 @@
 import {BrowserRouter as Router, Route, Link, Switch} from "react-router-dom";
 import {Home} from "./home/home";
+import {Destination} from "./destination/destination";
 import Logo from "./assets/logo";
 import "./App.css";
 
@@ -20,7 +21,7 @@ function App() {
                   </Link>
                 </li>
                 <li>
-                  <Link className="link" to="/destination">
+                  <Link className="link" to="/destination/moon">
                     01 destination
                   </Link>
                 </li>
@@ -43,7 +44,7 @@ function App() {
             <Home />
           </Route>
           <Route exact path="/destination">
-            <div></div>
+            <Destination />
           </Route>
           <Route exact path="/crew">
             <div></div>
