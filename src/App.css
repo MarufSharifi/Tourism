@@ -9,10 +9,16 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+  margin-top: 3vh;
+}
+
+.logo {
+  margin-left: 3vw;
 }
 
 nav {
-  width: 80vw;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -20,24 +26,38 @@ nav {
 }
 
 .headerLine {
-  width: 40vw;
-  height: 0.1px;
-  background-color: white;
+  width: 35vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.navRight {
+  width: 50vw;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.1);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10vw;
+}
+
+.lineOnNav {
+  width: 5vw;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 ol {
-  width: 50vw;
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 45vw;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   list-style-type: none;
+  padding-left: 3vw;
 }
 
 li {
-  padding: 20px 0 2px 0;
-  /* border-bottom: tomato solid 10px; */
+  padding: 3vh 0px 3vh 0px;
+  border-bottom: 2px white solid;
 }
 
 .link {
@@ -45,4 +65,5 @@ li {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
+  font-size: 1.2vw;
 }
