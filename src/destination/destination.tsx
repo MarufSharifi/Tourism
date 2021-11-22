@@ -6,7 +6,7 @@ export const Destination = () => {
       <nav>
         <ol>
           <li>
-            <Link className="link" to={`/destination`}>
+            <Link className="link" to={`/moon`}>
               moon
             </Link>
           </li>
